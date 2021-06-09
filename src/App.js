@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Route } from 'react-router-dom';
 
 import { Header } from './components';
@@ -8,7 +8,6 @@ function App() {
   return (
     <div className="wrapper">
       <Header />
-
       <div className="content">
         <Route path="/" component={Home} exact />
         <Route path="/card" component={Card} exact />
