@@ -1,8 +1,8 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
 
 import { Header } from './components';
-import { Home, Card } from './pages';
+import { Home, Cart } from './pages';
+import { Route } from 'react-router-dom';
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <Header />
       <div className="content">
         <Route path="/" component={Home} exact />
-        <Route path="/card" component={Card} exact />
+        <Route path="/cart" component={Cart} exact />
       </div>
     </div>
   );
